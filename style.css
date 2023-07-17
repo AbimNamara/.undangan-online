@@ -25,6 +25,7 @@ body {
     height: 100%;
     background-image: url(img/bg-prewed.jpg);
     z-index: -1;
+    background-repeat: no-repeat;
 
 }
 
@@ -89,5 +90,50 @@ body {
         padding: 45px;
         margin: 3px;
     }
+    .hero h4 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.9rem;
+}
+
+.simply-countdown {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.simply-countdown>.simply-section {
+    padding: 45px !important;
+    margin: 15px !important;
+    width: 36% !important;
+    aspect-ratio: 1 !important;
+    height: auto !important;
+}
+
+.hero a {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.hero ::before {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero ::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26,0,22,.4);
+    top: 0;
+    left: 0;
+}
+        
     
 }
